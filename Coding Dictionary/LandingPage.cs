@@ -17,5 +17,16 @@ namespace Coding_Dictionary
             InitializeComponent();
         }
 
+        private void button1CodingRequirements_Click(object sender, EventArgs e)
+        {
+            CodingRequirementsSelect codingRequirementsSelect = new CodingRequirementsSelect();
+            codingRequirementsSelect.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            CodingRequirementsSelect codingRequirementsSelect = new CodingRequirementsSelect();
+            codingRequirementsSelect.Show();
+        }
     }
 }

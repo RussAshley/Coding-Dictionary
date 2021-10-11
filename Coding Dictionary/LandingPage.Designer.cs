@@ -52,13 +52,14 @@ namespace Coding_Dictionary
             // 
             // button1Search
             // 
+            this.button1Search.BackColor = System.Drawing.Color.LightGoldenrodYellow;
             this.button1Search.ForeColor = System.Drawing.Color.DarkRed;
             this.button1Search.Location = new System.Drawing.Point(58, 400);
             this.button1Search.Name = "button1Search";
             this.button1Search.Size = new System.Drawing.Size(105, 31);
             this.button1Search.TabIndex = 1;
             this.button1Search.Text = "Search";
-            this.button1Search.UseVisualStyleBackColor = true;
+            this.button1Search.UseVisualStyleBackColor = false;
             // 
             // button1CodingRequirements
             // 
@@ -70,6 +71,7 @@ namespace Coding_Dictionary
             this.button1CodingRequirements.TabIndex = 2;
             this.button1CodingRequirements.Text = "Coding Requirements and Planning";
             this.button1CodingRequirements.UseVisualStyleBackColor = false;
+            this.button1CodingRequirements.Click += new System.EventHandler(this.button1CodingRequirements_Click);
             // 
             // button2
             // 
@@ -81,6 +83,7 @@ namespace Coding_Dictionary
             this.button2.TabIndex = 3;
             this.button2.Text = "Coding Design";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
