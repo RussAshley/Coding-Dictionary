@@ -25,8 +25,14 @@ namespace Coding_Dictionary
 
         private void button2_Click(object sender, EventArgs e)
         {
-            CodingRequirementsSelect codingRequirementsSelect = new CodingRequirementsSelect();
-            codingRequirementsSelect.Show();
+           CodingDesignSelect codingDesignSelect= new CodingDesignSelect();
+            codingDesignSelect.Show();
+        }
+
+        private void button3ImplementationSeelect_Click(object sender, EventArgs e)
+        {
+            ImplementationSelect implementationSelect = new ImplementationSelect();
+            implementationSelect.Show();
         }
     }
 }

@@ -14,5 +14,10 @@ namespace Coding_Dictionary
         {
             InitializeComponent();
         }
+
+        private void TestingSelect_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -33,10 +33,10 @@ namespace Coding_Dictionary
             this.button1Search = new System.Windows.Forms.Button();
             this.button1CodingRequirements = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.button3ImplementationSeelect = new System.Windows.Forms.Button();
+            this.button4TestingSelect = new System.Windows.Forms.Button();
+            this.button5ManagementSeelect = new System.Windows.Forms.Button();
+            this.button6MiscSeelect = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -85,49 +85,50 @@ namespace Coding_Dictionary
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // button3ImplementationSeelect
             // 
-            this.button3.BackColor = System.Drawing.Color.Goldenrod;
-            this.button3.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.Location = new System.Drawing.Point(96, 268);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(234, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Implementation";
-            this.button3.UseVisualStyleBackColor = false;
+            this.button3ImplementationSeelect.BackColor = System.Drawing.Color.Goldenrod;
+            this.button3ImplementationSeelect.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button3ImplementationSeelect.Location = new System.Drawing.Point(96, 268);
+            this.button3ImplementationSeelect.Name = "button3ImplementationSeelect";
+            this.button3ImplementationSeelect.Size = new System.Drawing.Size(234, 23);
+            this.button3ImplementationSeelect.TabIndex = 4;
+            this.button3ImplementationSeelect.Text = "Implementation";
+            this.button3ImplementationSeelect.UseVisualStyleBackColor = false;
+            this.button3ImplementationSeelect.Click += new System.EventHandler(this.button3ImplementationSeelect_Click);
             // 
-            // button4
+            // button4TestingSelect
             // 
-            this.button4.BackColor = System.Drawing.Color.Goldenrod;
-            this.button4.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button4.Location = new System.Drawing.Point(479, 106);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(249, 23);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Testing";
-            this.button4.UseVisualStyleBackColor = false;
+            this.button4TestingSelect.BackColor = System.Drawing.Color.Goldenrod;
+            this.button4TestingSelect.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button4TestingSelect.Location = new System.Drawing.Point(479, 106);
+            this.button4TestingSelect.Name = "button4TestingSelect";
+            this.button4TestingSelect.Size = new System.Drawing.Size(249, 23);
+            this.button4TestingSelect.TabIndex = 5;
+            this.button4TestingSelect.Text = "Testing";
+            this.button4TestingSelect.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // button5ManagementSeelect
             // 
-            this.button5.BackColor = System.Drawing.Color.Goldenrod;
-            this.button5.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button5.Location = new System.Drawing.Point(479, 194);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(249, 23);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "Management";
-            this.button5.UseVisualStyleBackColor = false;
+            this.button5ManagementSeelect.BackColor = System.Drawing.Color.Goldenrod;
+            this.button5ManagementSeelect.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button5ManagementSeelect.Location = new System.Drawing.Point(479, 194);
+            this.button5ManagementSeelect.Name = "button5ManagementSeelect";
+            this.button5ManagementSeelect.Size = new System.Drawing.Size(249, 23);
+            this.button5ManagementSeelect.TabIndex = 6;
+            this.button5ManagementSeelect.Text = "Management";
+            this.button5ManagementSeelect.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // button6MiscSeelect
             // 
-            this.button6.BackColor = System.Drawing.Color.Goldenrod;
-            this.button6.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button6.Location = new System.Drawing.Point(479, 268);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(249, 23);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "Misc.";
-            this.button6.UseVisualStyleBackColor = false;
+            this.button6MiscSeelect.BackColor = System.Drawing.Color.Goldenrod;
+            this.button6MiscSeelect.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button6MiscSeelect.Location = new System.Drawing.Point(479, 268);
+            this.button6MiscSeelect.Name = "button6MiscSeelect";
+            this.button6MiscSeelect.Size = new System.Drawing.Size(249, 23);
+            this.button6MiscSeelect.TabIndex = 7;
+            this.button6MiscSeelect.Text = "Misc.";
+            this.button6MiscSeelect.UseVisualStyleBackColor = false;
             // 
             // LandingPage
             // 
@@ -135,10 +136,10 @@ namespace Coding_Dictionary
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button6MiscSeelect);
+            this.Controls.Add(this.button5ManagementSeelect);
+            this.Controls.Add(this.button4TestingSelect);
+            this.Controls.Add(this.button3ImplementationSeelect);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1CodingRequirements);
             this.Controls.Add(this.button1Search);
@@ -156,10 +157,10 @@ namespace Coding_Dictionary
         private System.Windows.Forms.Button button1Search;
         private System.Windows.Forms.Button button1CodingRequirements;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button3ImplementationSeelect;
+        private System.Windows.Forms.Button button4TestingSelect;
+        private System.Windows.Forms.Button button5ManagementSeelect;
+        private System.Windows.Forms.Button button6MiscSeelect;
     }
 }
 
