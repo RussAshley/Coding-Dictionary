@@ -60,6 +60,7 @@ namespace Coding_Dictionary
             this.button1Search.TabIndex = 1;
             this.button1Search.Text = "Search";
             this.button1Search.UseVisualStyleBackColor = false;
+            this.button1Search.Click += new System.EventHandler(this.button1Search_Click);
             // 
             // button1CodingRequirements
             // 

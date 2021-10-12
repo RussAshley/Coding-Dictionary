@@ -30,11 +30,11 @@ namespace Coding_Dictionary
         private void InitializeComponent()
         {
             this.button1Scrum = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.button2Kanban = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.button5Back = new System.Windows.Forms.Button();
+            this.buttonBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1Scrum
@@ -49,16 +49,17 @@ namespace Coding_Dictionary
             this.button1Scrum.UseVisualStyleBackColor = false;
             this.button1Scrum.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // button2Kanban
             // 
-            this.button2.BackColor = System.Drawing.Color.Goldenrod;
-            this.button2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(205, 224);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(174, 66);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Kanban";
-            this.button2.UseVisualStyleBackColor = false;
+            this.button2Kanban.BackColor = System.Drawing.Color.Goldenrod;
+            this.button2Kanban.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button2Kanban.Location = new System.Drawing.Point(205, 224);
+            this.button2Kanban.Name = "button2Kanban";
+            this.button2Kanban.Size = new System.Drawing.Size(174, 66);
+            this.button2Kanban.TabIndex = 1;
+            this.button2Kanban.Text = "Kanban";
+            this.button2Kanban.UseVisualStyleBackColor = false;
+            this.button2Kanban.Click += new System.EventHandler(this.button2Kanban_Click);
             // 
             // button3
             // 
@@ -70,6 +71,7 @@ namespace Coding_Dictionary
             this.button3.TabIndex = 2;
             this.button3.Text = "Waterfall";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -81,6 +83,7 @@ namespace Coding_Dictionary
             this.button4.TabIndex = 3;
             this.button4.Text = "Agile";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label1
             // 
@@ -92,17 +95,17 @@ namespace Coding_Dictionary
             this.label1.TabIndex = 4;
             this.label1.Text = "Coding Requirements and Planning";
             // 
-            // button5Back
+            // buttonBack
             // 
-            this.button5Back.BackColor = System.Drawing.Color.LightGoldenrodYellow;
-            this.button5Back.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button5Back.ForeColor = System.Drawing.Color.Red;
-            this.button5Back.Location = new System.Drawing.Point(90, 398);
-            this.button5Back.Name = "button5Back";
-            this.button5Back.Size = new System.Drawing.Size(75, 23);
-            this.button5Back.TabIndex = 5;
-            this.button5Back.Text = "Back";
-            this.button5Back.UseVisualStyleBackColor = false;
+            this.buttonBack.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.buttonBack.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonBack.Location = new System.Drawing.Point(642, 396);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(75, 23);
+            this.buttonBack.TabIndex = 6;
+            this.buttonBack.Text = "Back";
+            this.buttonBack.UseVisualStyleBackColor = false;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // CodingRequirementsSelect
             // 
@@ -110,11 +113,11 @@ namespace Coding_Dictionary
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button5Back);
+            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button2Kanban);
             this.Controls.Add(this.button1Scrum);
             this.Name = "CodingRequirementsSelect";
             this.Text = "CodingRequirementsSelect";
@@ -126,10 +129,10 @@ namespace Coding_Dictionary
         #endregion
 
         private System.Windows.Forms.Button button1Scrum;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button2Kanban;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button5Back;
+        private System.Windows.Forms.Button buttonBack;
     }
 }

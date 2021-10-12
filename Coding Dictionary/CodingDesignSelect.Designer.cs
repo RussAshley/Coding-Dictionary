@@ -34,6 +34,7 @@ namespace Coding_Dictionary
             this.button1UnstructedData = new System.Windows.Forms.Button();
             this.button2Databases = new System.Windows.Forms.Button();
             this.button3DatabaseQueries = new System.Windows.Forms.Button();
+            this.buttonBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1CodingDesign
@@ -56,6 +57,7 @@ namespace Coding_Dictionary
             this.button1StructuredData.TabIndex = 1;
             this.button1StructuredData.Text = "Structured Data";
             this.button1StructuredData.UseVisualStyleBackColor = false;
+            this.button1StructuredData.Click += new System.EventHandler(this.button1StructuredData_Click);
             // 
             // button1UnstructedData
             // 
@@ -67,6 +69,7 @@ namespace Coding_Dictionary
             this.button1UnstructedData.TabIndex = 2;
             this.button1UnstructedData.Text = "Unstructured Data";
             this.button1UnstructedData.UseVisualStyleBackColor = false;
+            this.button1UnstructedData.Click += new System.EventHandler(this.button1UnstructedData_Click);
             // 
             // button2Databases
             // 
@@ -78,6 +81,7 @@ namespace Coding_Dictionary
             this.button2Databases.TabIndex = 3;
             this.button2Databases.Text = "Databases";
             this.button2Databases.UseVisualStyleBackColor = false;
+            this.button2Databases.Click += new System.EventHandler(this.button2Databases_Click);
             // 
             // button3DatabaseQueries
             // 
@@ -89,6 +93,19 @@ namespace Coding_Dictionary
             this.button3DatabaseQueries.TabIndex = 4;
             this.button3DatabaseQueries.Text = "Database Queries";
             this.button3DatabaseQueries.UseVisualStyleBackColor = false;
+            this.button3DatabaseQueries.Click += new System.EventHandler(this.button3DatabaseQueries_Click);
+            // 
+            // buttonBack
+            // 
+            this.buttonBack.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.buttonBack.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonBack.Location = new System.Drawing.Point(641, 406);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(75, 23);
+            this.buttonBack.TabIndex = 6;
+            this.buttonBack.Text = "Back";
+            this.buttonBack.UseVisualStyleBackColor = false;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // CodingDesignSelect
             // 
@@ -96,6 +113,7 @@ namespace Coding_Dictionary
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.button3DatabaseQueries);
             this.Controls.Add(this.button2Databases);
             this.Controls.Add(this.button1UnstructedData);
@@ -115,5 +133,6 @@ namespace Coding_Dictionary
         private System.Windows.Forms.Button button1UnstructedData;
         private System.Windows.Forms.Button button2Databases;
         private System.Windows.Forms.Button button3DatabaseQueries;
+        private System.Windows.Forms.Button buttonBack;
     }
 }

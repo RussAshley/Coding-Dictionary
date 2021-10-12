@@ -17,8 +17,37 @@ namespace Coding_Dictionary
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DisplayDefinition displayDefinition = new DisplayDefinition(Button1Scrum.Text);
-            displayDefinition .Show();
+            DisplayDefinition displayDefinition = new DisplayDefinition(button1Scrum.Text);
+            displayDefinition.Show();
+            this.Hide();
+        }
+
+        private void button2Kanban_Click(object sender, EventArgs e)
+        {
+            DisplayDefinition displayDefinition = new DisplayDefinition(button2Kanban.Text);
+            displayDefinition.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            DisplayDefinition displayDefinition = new DisplayDefinition(button3.Text);
+            displayDefinition.Show();
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            DisplayDefinition displayDefinition = new DisplayDefinition(button4.Text);
+            displayDefinition.Show();
+            this.Hide();
+        }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            LandingPage landingPage = new LandingPage();
+            landingPage.Show();
+            this.Hide();
         }
     }
 }

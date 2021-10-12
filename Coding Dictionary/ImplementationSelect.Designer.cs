@@ -39,6 +39,7 @@ namespace Coding_Dictionary
             this.button7Fields = new System.Windows.Forms.Button();
             this.button8Classes = new System.Windows.Forms.Button();
             this.button9Properties = new System.Windows.Forms.Button();
+            this.buttonBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -151,12 +152,24 @@ namespace Coding_Dictionary
             this.button9Properties.Text = "Properties";
             this.button9Properties.UseVisualStyleBackColor = false;
             // 
+            // buttonBack
+            // 
+            this.buttonBack.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.buttonBack.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonBack.Location = new System.Drawing.Point(711, 421);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(75, 23);
+            this.buttonBack.TabIndex = 10;
+            this.buttonBack.Text = "Back";
+            this.buttonBack.UseVisualStyleBackColor = false;
+            // 
             // ImplementationSelect
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.ClientSize = new System.Drawing.Size(928, 570);
+            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.button9Properties);
             this.Controls.Add(this.button8Classes);
             this.Controls.Add(this.button7Fields);
@@ -188,5 +201,6 @@ namespace Coding_Dictionary
         private System.Windows.Forms.Button button7Fields;
         private System.Windows.Forms.Button button8Classes;
         private System.Windows.Forms.Button button9Properties;
+        private System.Windows.Forms.Button buttonBack;
     }
 }
