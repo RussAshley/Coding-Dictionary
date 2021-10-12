@@ -56,7 +56,7 @@ namespace Coding_Dictionary
             // 
             this.button1Iterations.BackColor = System.Drawing.Color.Goldenrod;
             this.button1Iterations.Location = new System.Drawing.Point(121, 87);
-            this.button1Iterations.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1Iterations.Margin = new System.Windows.Forms.Padding(4);
             this.button1Iterations.Name = "button1Iterations";
             this.button1Iterations.Size = new System.Drawing.Size(96, 29);
             this.button1Iterations.TabIndex = 1;
@@ -156,7 +156,7 @@ namespace Coding_Dictionary
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.ClientSize = new System.Drawing.Size(1029, 570);
+            this.ClientSize = new System.Drawing.Size(928, 570);
             this.Controls.Add(this.button9Properties);
             this.Controls.Add(this.button8Classes);
             this.Controls.Add(this.button7Fields);
@@ -168,7 +168,7 @@ namespace Coding_Dictionary
             this.Controls.Add(this.button1Iterations);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ImplementationSelect";
             this.Text = "ImplementationSelect";
             this.ResumeLayout(false);

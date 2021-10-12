@@ -17,7 +17,8 @@ namespace Coding_Dictionary
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            DisplayDefinition displayDefinition = new DisplayDefinition(Button1Scrum.Text);
+            displayDefinition .Show();
         }
     }
 }

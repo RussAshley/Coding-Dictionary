@@ -107,6 +107,7 @@ namespace Coding_Dictionary
             this.button4TestingSelect.TabIndex = 5;
             this.button4TestingSelect.Text = "Testing";
             this.button4TestingSelect.UseVisualStyleBackColor = false;
+            this.button4TestingSelect.Click += new System.EventHandler(this.button4TestingSelect_Click);
             // 
             // button5ManagementSeelect
             // 
@@ -118,6 +119,7 @@ namespace Coding_Dictionary
             this.button5ManagementSeelect.TabIndex = 6;
             this.button5ManagementSeelect.Text = "Management";
             this.button5ManagementSeelect.UseVisualStyleBackColor = false;
+            this.button5ManagementSeelect.Click += new System.EventHandler(this.button5ManagementSeelect_Click);
             // 
             // button6MiscSeelect
             // 
@@ -129,6 +131,7 @@ namespace Coding_Dictionary
             this.button6MiscSeelect.TabIndex = 7;
             this.button6MiscSeelect.Text = "Misc.";
             this.button6MiscSeelect.UseVisualStyleBackColor = false;
+            this.button6MiscSeelect.Click += new System.EventHandler(this.button6MiscSeelect_Click);
             // 
             // LandingPage
             // 

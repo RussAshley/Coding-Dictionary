@@ -34,5 +34,23 @@ namespace Coding_Dictionary
             ImplementationSelect implementationSelect = new ImplementationSelect();
             implementationSelect.Show();
         }
+
+        private void button4TestingSelect_Click(object sender, EventArgs e)
+        {
+            TestingSelect testingSelect = new TestingSelect();
+             testingSelect.Show();
+        }
+
+        private void button5ManagementSeelect_Click(object sender, EventArgs e)
+        {
+            ManagementSelect managementSelect = new ManagementSelect();
+            managementSelect.Show();
+        }
+
+        private void button6MiscSeelect_Click(object sender, EventArgs e)
+        {
+            MiscSelect miscSelect = new MiscSelect();
+            miscSelect.Show();
+        }
     }
 }
