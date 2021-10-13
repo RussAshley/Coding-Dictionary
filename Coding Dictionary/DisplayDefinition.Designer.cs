@@ -35,6 +35,8 @@ namespace Coding_Dictionary
             this.richTextBoxImage = new System.Windows.Forms.RichTextBox();
             this.linkLabelURL = new System.Windows.Forms.LinkLabel();
             this.buttonBack = new System.Windows.Forms.Button();
+            this.pictureDefinition = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureDefinition)).BeginInit();
             this.SuspendLayout();
             // 
             // label1DefinitionTitle
@@ -69,6 +71,7 @@ namespace Coding_Dictionary
             this.button1Modify.Text = "Modify";
             this.button1Modify.UseCompatibleTextRendering = true;
             this.button1Modify.UseVisualStyleBackColor = false;
+            this.button1Modify.Click += new System.EventHandler(this.button1Modify_Click);
             // 
             // richTextBoxImage
             // 
@@ -88,6 +91,7 @@ namespace Coding_Dictionary
             this.linkLabelURL.TabIndex = 4;
             this.linkLabelURL.TabStop = true;
             this.linkLabelURL.Text = "linkLabel1";
+            this.linkLabelURL.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelURL_LinkClicked);
             // 
             // buttonBack
             // 
@@ -99,6 +103,17 @@ namespace Coding_Dictionary
             this.buttonBack.TabIndex = 5;
             this.buttonBack.Text = "Back";
             this.buttonBack.UseVisualStyleBackColor = false;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            // 
+            // pictureDefinition
+            // 
+            this.pictureDefinition.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureDefinition.Location = new System.Drawing.Point(567, 88);
+            this.pictureDefinition.Name = "pictureDefinition";
+            this.pictureDefinition.Size = new System.Drawing.Size(221, 297);
+            this.pictureDefinition.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureDefinition.TabIndex = 6;
+            this.pictureDefinition.TabStop = false;
             // 
             // DisplayDefinition
             // 
@@ -106,6 +121,7 @@ namespace Coding_Dictionary
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureDefinition);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.linkLabelURL);
             this.Controls.Add(this.richTextBoxImage);
@@ -114,6 +130,7 @@ namespace Coding_Dictionary
             this.Controls.Add(this.label1DefinitionTitle);
             this.Name = "DisplayDefinition";
             this.Text = "DisplayDefinition";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureDefinition)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -127,5 +144,6 @@ namespace Coding_Dictionary
         private System.Windows.Forms.RichTextBox richTextBoxImage;
         private System.Windows.Forms.LinkLabel linkLabelURL;
         private System.Windows.Forms.Button buttonBack;
+        private System.Windows.Forms.PictureBox pictureDefinition;
     }
 }

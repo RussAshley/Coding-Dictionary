@@ -63,6 +63,7 @@ namespace Coding_Dictionary
             this.button1Iterations.TabIndex = 1;
             this.button1Iterations.Text = "Iterations";
             this.button1Iterations.UseVisualStyleBackColor = false;
+            this.button1Iterations.Click += new System.EventHandler(this.button1Iterations_Click);
             // 
             // button2Sequence
             // 
@@ -74,6 +75,7 @@ namespace Coding_Dictionary
             this.button2Sequence.TabIndex = 2;
             this.button2Sequence.Text = "Sequence";
             this.button2Sequence.UseVisualStyleBackColor = false;
+            this.button2Sequence.Click += new System.EventHandler(this.button2Sequence_Click);
             // 
             // button3Selection
             // 
@@ -85,6 +87,7 @@ namespace Coding_Dictionary
             this.button3Selection.TabIndex = 3;
             this.button3Selection.Text = "Selection";
             this.button3Selection.UseVisualStyleBackColor = false;
+            this.button3Selection.Click += new System.EventHandler(this.button3Selection_Click);
             // 
             // button4Data
             // 
@@ -96,6 +99,7 @@ namespace Coding_Dictionary
             this.button4Data.TabIndex = 4;
             this.button4Data.Text = "Data";
             this.button4Data.UseVisualStyleBackColor = false;
+            this.button4Data.Click += new System.EventHandler(this.button4Data_Click);
             // 
             // button5Methods
             // 
@@ -107,6 +111,7 @@ namespace Coding_Dictionary
             this.button5Methods.TabIndex = 5;
             this.button5Methods.Text = "Methods";
             this.button5Methods.UseVisualStyleBackColor = false;
+            this.button5Methods.Click += new System.EventHandler(this.button5Methods_Click);
             // 
             // button6Objects
             // 
@@ -118,6 +123,7 @@ namespace Coding_Dictionary
             this.button6Objects.TabIndex = 6;
             this.button6Objects.Text = "Objects";
             this.button6Objects.UseVisualStyleBackColor = false;
+            this.button6Objects.Click += new System.EventHandler(this.button6Objects_Click);
             // 
             // button7Fields
             // 
@@ -129,6 +135,7 @@ namespace Coding_Dictionary
             this.button7Fields.TabIndex = 7;
             this.button7Fields.Text = "Fields";
             this.button7Fields.UseVisualStyleBackColor = false;
+            this.button7Fields.Click += new System.EventHandler(this.button7Fields_Click);
             // 
             // button8Classes
             // 
@@ -140,6 +147,7 @@ namespace Coding_Dictionary
             this.button8Classes.TabIndex = 8;
             this.button8Classes.Text = "Classes";
             this.button8Classes.UseVisualStyleBackColor = false;
+            this.button8Classes.Click += new System.EventHandler(this.button8Classes_Click);
             // 
             // button9Properties
             // 
@@ -151,6 +159,7 @@ namespace Coding_Dictionary
             this.button9Properties.TabIndex = 9;
             this.button9Properties.Text = "Properties";
             this.button9Properties.UseVisualStyleBackColor = false;
+            this.button9Properties.Click += new System.EventHandler(this.button9Properties_Click);
             // 
             // buttonBack
             // 
@@ -162,6 +171,7 @@ namespace Coding_Dictionary
             this.buttonBack.TabIndex = 10;
             this.buttonBack.Text = "Back";
             this.buttonBack.UseVisualStyleBackColor = false;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // ImplementationSelect
             // 

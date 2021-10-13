@@ -14,5 +14,12 @@ namespace Coding_Dictionary
         {
             InitializeComponent();
         }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            LandingPage landingPage = new LandingPage();
+            landingPage.Show();
+            this.Hide();
+        }
     }
 }

@@ -53,6 +53,7 @@ namespace Coding_Dictionary
             this.buttonBack.TabIndex = 6;
             this.buttonBack.Text = "Back";
             this.buttonBack.UseVisualStyleBackColor = false;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // MiscSelect
             // 

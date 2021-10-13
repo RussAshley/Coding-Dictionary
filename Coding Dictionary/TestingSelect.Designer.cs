@@ -55,6 +55,7 @@ namespace Coding_Dictionary
             this.button1.TabIndex = 1;
             this.button1.Text = "Functional Testing";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -66,6 +67,7 @@ namespace Coding_Dictionary
             this.button2.TabIndex = 2;
             this.button2.Text = "Non Functional Testing";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -77,6 +79,7 @@ namespace Coding_Dictionary
             this.button3.TabIndex = 3;
             this.button3.Text = "Test Driven Development";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // buttonBack
             // 
@@ -88,6 +91,7 @@ namespace Coding_Dictionary
             this.buttonBack.TabIndex = 6;
             this.buttonBack.Text = "Back";
             this.buttonBack.UseVisualStyleBackColor = false;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // TestingSelect
             // 
