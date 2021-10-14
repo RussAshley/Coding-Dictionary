@@ -67,9 +67,11 @@ namespace Coding_Dictionary
 
         private void button1Modify_Click(object sender, EventArgs e)
         {
-            
+            definitionDatabase.Definition1 = textBoxDefinitionDisplay.Text;
+            da.ModifyTerm(definitionDatabase);
 
-            
+
+
         }
     }
 }

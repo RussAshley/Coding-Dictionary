@@ -44,6 +44,42 @@ namespace Coding_Dictionary
             return result;
         }
 
+        public void ModifyTerm(DefinitionDatabase termToUpdate)
+        {
+            using (var connection = new SQLiteConnection(ConnectionString))
+            {
+                connection.Open();
+
+                var command = connection.CreateCommand();
+                command.CommandText = @"UPDATE Dictionary SET Term = @term, Definition = @defintion, Image= @image, URL = @URL WHERE ID = @id";
+
+                command.Parameters.AddWithValue("@term", termToUpdate.Term1);
+                command.Parameters.AddWithValue("@defintion", termToUpdate.Definition1);
+                command.Parameters.AddWithValue("@image", termToUpdate.Image1);
+                command.Parameters.AddWithValue("@URL", termToUpdate.URL1);
+                command.Parameters.AddWithValue("@id", termToUpdate.ID1);
+
+                try
+                {
+                    int count = command.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+
+                connection.Close();
+            }
+
+        }
+
+        //Delete
+
 
     }
+
 }
+
+  
+
+
