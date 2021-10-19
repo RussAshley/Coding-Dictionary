@@ -49,5 +49,19 @@ namespace Coding_Dictionary
             landingPage.Show();
             this.Hide();
         }
+
+        private void buttonRiskManagement_Click(object sender, EventArgs e)
+        {
+            DisplayDefinition displayDefinition = new DisplayDefinition(buttonRiskManagement.Text);
+            displayDefinition.Show();
+            this.Hide();
+        }
+
+        private void buttonCriticalPath_Click(object sender, EventArgs e)
+        {
+            DisplayDefinition displayDefinition = new DisplayDefinition(buttonCriticalPath.Text);
+            displayDefinition.Show();
+            this.Hide();
+        }
     }
 }

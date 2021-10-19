@@ -11,7 +11,12 @@ using System.Windows.Forms;
 namespace Coding_Dictionary
 {
     public partial class LandingPage : Form
+
+        
+
     {
+
+        
         public LandingPage()
         {
             InitializeComponent();
@@ -64,7 +69,16 @@ namespace Coding_Dictionary
 
         private void button1Search_Click(object sender, EventArgs e)
         {
+            SearchForm searchForm = new SearchForm();
+            searchForm.Show();
+            this.Hide();
+        }
 
+        private void buttonAdd_Click(object sender, EventArgs e)
+        {
+            AddForm addForm = new AddForm();
+            addForm.Show();
+            this.Hide();
         }
     }
 }

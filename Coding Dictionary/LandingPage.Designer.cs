@@ -37,6 +37,7 @@ namespace Coding_Dictionary
             this.button4TestingSelect = new System.Windows.Forms.Button();
             this.button5ManagementSeelect = new System.Windows.Forms.Button();
             this.button6MiscSeelect = new System.Windows.Forms.Button();
+            this.buttonAdd = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -134,12 +135,25 @@ namespace Coding_Dictionary
             this.button6MiscSeelect.UseVisualStyleBackColor = false;
             this.button6MiscSeelect.Click += new System.EventHandler(this.button6MiscSeelect_Click);
             // 
+            // buttonAdd
+            // 
+            this.buttonAdd.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.buttonAdd.ForeColor = System.Drawing.Color.DarkRed;
+            this.buttonAdd.Location = new System.Drawing.Point(203, 400);
+            this.buttonAdd.Name = "buttonAdd";
+            this.buttonAdd.Size = new System.Drawing.Size(105, 31);
+            this.buttonAdd.TabIndex = 8;
+            this.buttonAdd.Text = "Add Term";
+            this.buttonAdd.UseVisualStyleBackColor = false;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
+            // 
             // LandingPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.button6MiscSeelect);
             this.Controls.Add(this.button5ManagementSeelect);
             this.Controls.Add(this.button4TestingSelect);
@@ -165,6 +179,7 @@ namespace Coding_Dictionary
         private System.Windows.Forms.Button button4TestingSelect;
         private System.Windows.Forms.Button button5ManagementSeelect;
         private System.Windows.Forms.Button button6MiscSeelect;
+        private System.Windows.Forms.Button buttonAdd;
     }
 }
 

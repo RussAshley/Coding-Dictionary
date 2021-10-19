@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Coding_Dictionary
 {
-    class DefinitionDatabase
+   public class DefinitionDatabase
     {
         private int ID;
         private string Term;

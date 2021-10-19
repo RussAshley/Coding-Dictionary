@@ -33,6 +33,19 @@ namespace Coding_Dictionary
             linkLabelURL.Text = definitionDatabase.URL1;
         }
 
+        public DisplayDefinition(DefinitionDatabase searchedTerm)
+        {
+            InitializeComponent();
+            
+            
+
+            label1DefinitionTitle.Text = searchedTerm.Term1;
+            textBoxDefinitionDisplay.Text = searchedTerm.Definition1;
+            pictureDefinition.Image = Image.FromFile(searchedTerm.Image1);
+            
+            linkLabelURL.Text = searchedTerm.URL1;
+        }
+
         private void buttonBack_Click(object sender, EventArgs e)
         {
             LandingPage landingPage = new LandingPage();
@@ -46,7 +59,7 @@ namespace Coding_Dictionary
             {
                 VisitLink();
             }
-            catch (Exception ex)
+            catch (Exception )
             {
                 MessageBox.Show("Unable to open link that was clicked.");
             }

@@ -73,12 +73,43 @@ namespace Coding_Dictionary
 
         }
 
-        //Delete
+        //Create
+        public void CreateTerm(DefinitionDatabase newDefinitionDatabase)
+        {
+            //Adds a new term to the db
+            using (var connection = new SQLiteConnection(ConnectionString))
+            {
+                connection.Open();
+
+                var command = connection.CreateCommand();
+                command.CommandText = @"INSERT INTO Dictionary (term, defintion, URL) VALUES ( @term, @defintion, @URL))";
+
+                command.Parameters.AddWithValue("@term", newDefinitionDatabase.Term1);
+                command.Parameters.AddWithValue("@definitionl", newDefinitionDatabase.Definition1);               
+                command.Parameters.AddWithValue("@URL", newDefinitionDatabase.URL1);
+
+                try
+                {
+                    int count = command.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+
+                connection.Close();
+            }
+        }
+
+
 
 
     }
 
+
+
 }
+
 
   
 
