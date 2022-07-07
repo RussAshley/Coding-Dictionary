@@ -10,7 +10,7 @@ namespace Coding_Dictionary
 {
     public partial class AddForm : Form
     {
-        static DefinitionAcess da = new DefinitionAcess("Dictionary.db");
+        static DefinitionAcess da = new DefinitionAcess("Data Source =Dictionary.db");
         public AddForm()
         {
             InitializeComponent();
@@ -20,6 +20,7 @@ namespace Coding_Dictionary
         {
             DefinitionDatabase newdefinitionDatabase = new DefinitionDatabase(0, "", "", "","");
             da.CreateTerm(newdefinitionDatabase);
+            //display new definition
             DisplayDefinition displayDefinition = new DisplayDefinition(newdefinitionDatabase);
             displayDefinition.Show();
             this.Hide();
